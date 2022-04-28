@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5795981726279603226}
   - component: {fileID: 8349571674309662573}
+  - component: {fileID: 9011881269715468872}
+  - component: {fileID: 2492490561466595330}
   m_Layer: 0
   m_Name: Cactus New
   m_TagString: Untagged
@@ -45,6 +47,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 100
+--- !u!95 &9011881269715468872
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795981726279603221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f3d31ab55f433244bbb3f7744bce987, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2492490561466595330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795981726279603221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44dc8beab5a09a42b6a4a0d2e9f1445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 4623802476417732790, guid: 2c15babdf4f30ae49a090c649088a089, type: 3}
+  gunTransform: {fileID: 5795981726185184172}
 --- !u!1001 &5693394765597671666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100,10 +135,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Body
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2264315503253131086, guid: 645661e66e25713489b44696b2a170bc, type: 3}
+    - {fileID: 2264315503253130929, guid: 645661e66e25713489b44696b2a170bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 645661e66e25713489b44696b2a170bc, type: 3}
 --- !u!4 &5795981725873245762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2264315503253130928, guid: 645661e66e25713489b44696b2a170bc, type: 3}
+  m_PrefabInstance: {fileID: 5693394765597671666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5795981726185184172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2264315503816792926, guid: 645661e66e25713489b44696b2a170bc, type: 3}
   m_PrefabInstance: {fileID: 5693394765597671666}
   m_PrefabAsset: {fileID: 0}
